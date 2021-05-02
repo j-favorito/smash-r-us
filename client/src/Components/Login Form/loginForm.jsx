@@ -5,7 +5,7 @@ import "./loginForm.css"
 function LoginForm() {
 
     const googleLogin = () => {
-        // window.open("", "_self")
+        // window.open("http://localhost:8080/auth/google", "_self");
         console.log("google click");
     }
 
