@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-smashrus-staging-205908-authRole",
+      "UnauthRoleArn": "arn:aws:iam::284475820379:role/amplify-smashrus-staging-205908-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::284475820379:role/amplify-smashrus-staging-205908-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-smashrus-staging-205908-deployment",
+      "UnauthRoleName": "amplify-smashrus-staging-205908-unauthRole",
+      "StackName": "amplify-smashrus-staging-205908",
+      "StackId": "arn:aws:cloudformation:us-east-2:284475820379:stack/amplify-smashrus-staging-205908/3d122280-ab89-11eb-9c67-02b5a70b77dc",
+      "AmplifyAppId": "d1ypd0n2rmpjf3"
+    }
+  }
+}
