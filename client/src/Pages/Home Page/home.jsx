@@ -1,10 +1,33 @@
 import React from "react";
+import Amplify from '@aws-amplify/core';
+import awsExports from '../../aws-exports';
+import { DataStore } from '@aws-amplify/datastore';
+import { Users } from '../../models/index.js';
 
-function HomePage(){
+function Home() {
 
-    return(
-        <h1>Home Page</h1>
+    const saveUser = async () => {
+        try {
+            Amplify.configure(awsExports);
+            await DataStore.save(
+                new Users({
+                    "username": "Lorem ipsum dolor sit amet",
+                    "portrait": "Lorem ipsum dolor sit amet",
+                    "wins": 5,
+                    "losses": 10
+                })
+            );
+        } catch (error) {
+            console.log(error);
+        }
+
+    }
+    return (
+        <div>
+            <button onClick={saveUser} >Click ME!</button>
+        </div>
     )
+
 }
 
-export default HomePage;
+export default Home;
